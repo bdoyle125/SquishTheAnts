@@ -65,9 +65,10 @@ var effect1 = new Tone.AutoFilter({
     "wet": 0.5
 });
 
+instrument.volume.value = -15;
 instrument.connect(effect1);
 effect1.toDestination();
-const vol = new Tone.Volume(0).toDestination();
+const vol = new Tone.Volume(-10).toDestination();
 
 
 const GameState = {

@@ -65,6 +65,7 @@ var effect1 = new Tone.AutoFilter({
     "wet": 0.5
 });
 
+// Lowers volume and connects instruments and effects to destination
 instrument.volume.value = -15;
 instrument.connect(effect1);
 effect1.toDestination();
